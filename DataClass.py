@@ -2,6 +2,7 @@ class DataClass:
     def __init__(self):
         self.sum_de = None
         self.distrct_div_nm = None
+        self.medcare_inst_nm = None
         self.emgncy_center_telno = None
         self.refine_lotno_addr = None
         self.refine_roadnm_addr = None
@@ -13,6 +14,9 @@ class DataClass:
 
     def out_distrct_div_nm(self):
         return self.distrct_div_nm
+
+    def out_medcare_inst_nm(self):
+        return self.medcare_inst_nm
 
     def out_emgncy_center_telno (self):
         return self.emgncy_center_telno
@@ -34,6 +38,9 @@ class DataClass:
 
     def in_distrct_div_nm(self, data):
         self.distrct_div_nm = data
+
+    def in_medcare_inst_nm(self, data):
+        self.medcare_inst_nm = data
 
     def in_emgncy_center_telno(self, data):
         self.emgncy_center_telno = data
